@@ -1,4 +1,28 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
+const { defineConfig } = require('@vue/cli-service');  
+const webpack = require('webpack');  
+  
+module.exports = defineConfig({  
+  transpileDependencies: true,  
+  devServer: {  
+    proxy: {  
+      '/myApi': {  
+        target: 'http://apis.juhe.cn/',  
+        changeOrigin: true,  
+        secure: false,  
+        pathRewrite: {  
+          '^/myApi': ''  
+        }  
+      }  
+    }  
+  },  
+  chainWebpack: config => {  
+    config.plugin('provide').use(webpack.ProvidePlugin, [  
+      {  
+        $: 'jquery',  
+        jquery: 'jquery',  
+        jQuery: 'jquery',  
+        'window.jQuery': 'jquery'  
+      }  
+    ]);  
+  }  
+});

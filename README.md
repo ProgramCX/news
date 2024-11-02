@@ -1,4 +1,4 @@
-# study
+# news
 
 ## Project setup
 ```
