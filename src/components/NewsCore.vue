@@ -19,21 +19,21 @@
           <div class="news-bar">
             <el-skeleton :rows="2" :animated="true" :loading="loading">
               <template #template>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
-                <el-skeleton-item variant="div" style=" width:  calc(40% - 168px);height:45%; margin: 12px;">
+                <el-skeleton-item variant="div" style=" width:  calc(40% - 218px);height:45%; margin: 15px;">
                 </el-skeleton-item>
               </template>
             </el-skeleton>
@@ -134,11 +134,11 @@ export default {
   }
 
   .item{
-    margin: 12px;
+    margin: 15px;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 2px 20px #00000050;
     border-radius: 10px;
-    width:  calc(40% - 168px);
+    width:  calc(40% - 218px);
     cursor: pointer;
     /* padding-bottom: 8px; */
   }
